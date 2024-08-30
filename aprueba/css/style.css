@@ -1,0 +1,56 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container{
+    width: 80vw;
+    display: flex;
+
+}
+
+.container .panel{
+    position: relative;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex: 1;
+    border-radius: 50px;
+    background-color: blue;
+    cursor: pointer;
+    margin: 1.5%;
+    transition: all 700ms ease-in-out;
+}
+
+.container .panel  h3{
+    font-size: 1.5rem;
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0;
+}
+
+.panel.active{
+    flex: 5;
+}
+
+.panel.active h3{
+    opacity: 1;
+    transition: opacity .4s ease-in;
+}
