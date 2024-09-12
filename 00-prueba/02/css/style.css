@@ -19,6 +19,7 @@ body {
     width: 100vw;
     background-color: aliceblue;
     overflow-X: hidden;
+    /* padding: 10px; */
 }
 
 h1 {
@@ -32,8 +33,6 @@ h1 {
     text-align: center;
     color: aliceblue;
     z-index: 1;
-
-
 }
 
 .container {
@@ -53,7 +52,7 @@ h1 {
     border-radius: 10px;
     box-shadow: 4px 4px 10px #656565;
     transform: translateX(-400%);
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.6s ease-in-out;
 }
 
 .box:nth-of-type(even) {
